@@ -12,6 +12,12 @@
       echo "Valor da bonificação: $boni" . PHP_EOL;
     }
 
+    function mostrarDados()
+    {
+      parent::mostrarDados();
+      echo "Usuáio: $this->usuario" . PHP_EOL;
+      echo "Senha: $this->senha" . PHP_EOL;
+    }
 
   }
  ?>

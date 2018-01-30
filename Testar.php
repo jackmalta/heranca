@@ -19,24 +19,17 @@
   $ger->usuario = "Laura123";
   $ger->senha = "senha";
 
-  echo "--------Gerente--------";
-  echo "Nome: $ger->nome".PHP_EOL;
-  echo "Salario: $ger->salario".PHP_EOL;
-  echo "Usuário: $ger->usuario".PHP_EOL;
-  echo "Senha: $ger->senha".PHP_EOL;
+  echo "--------Gerente--------" . PHP_EOL;
+  $ger->mostrarDados();
   $ger->calcularBonificacao();
 
 
-  echo "--------Telefonista--------";
-  echo "Nome: $tele->nome".PHP_EOL;
-  echo "Salario: $tele->salario".PHP_EOL;
-  echo "Usuário: $tele->estacaoDeTrabalho".PHP_EOL;
+  echo "--------Telefonista--------" . PHP_EOL;
+  $tele->mostrarDados();
   $tele->calcularBonificacao();
 
-  echo "--------Secretario--------";
-  echo "Nome: $sec->nome".PHP_EOL;
-  echo "Salario: $sec->salario".PHP_EOL;
-  echo "Ramal: $sec->ramal".PHP_EOL;
+  echo "--------Secretario--------" . PHP_EOL;
+  $sec->mostrarDados();
   $sec->calcularBonificacao();
 
 
