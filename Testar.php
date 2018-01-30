@@ -3,21 +3,12 @@
   require_once 'Telefonista.php';
   require_once 'Secretario.php';
 
-  $tele = new Telefonista();
-  $tele->nome = "Seu Cuca";
-  $tele->salario = 1000;
-  $tele->estacaoDeTrabalho = 23;
+  $tele = new Telefonista("Seu Cuca", 1200, 23);
 
-  $sec = new Secretario();
-  $sec->nome = "Anastacio";
-  $sec->salario = 1000;
-  $sec->ramal = 15;
+  $sec = new Secretario("Anastacio", 999, 15);
 
-  $ger = new Gerente();
-  $ger->nome = "Laura";
-  $ger->salario = 2500;
-  $ger->usuario = "Laura123";
-  $ger->senha = "senha";
+  $ger = new Gerente("Elena", 2500, "Elena123", "Senha12");
+
 
   echo "--------Gerente--------" . PHP_EOL;
   $ger->mostrarDados();

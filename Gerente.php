@@ -6,6 +6,14 @@
     public $usuario;
     public $senha;
 
+    function __construct($n, $s, $u, $p)
+    {
+      $this->nome     = $n;
+      $this->salario  = $s;
+      $this->usuario  = $u;
+      $this->senha    = $p;
+    }
+
     function calcularBonificacao()
     {
       $boni = $this->salario * 0.6 + 100;

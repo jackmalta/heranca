@@ -4,6 +4,13 @@
   {
     public $ramal;
 
+    function __construct($n, $s, $r)
+    {
+      $this->nome     = $n;
+      $this->salario  = $s;
+      $this->ramal  = $r;
+    }
+
     function mostrarDados()
     {
       parent::mostrarDados();

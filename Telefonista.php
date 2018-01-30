@@ -4,6 +4,13 @@
   {
     public $estacaoDeTrabalho;
 
+    function __construct($n, $s, $e)
+    {
+      $this->nome     = $n;
+      $this->salario  = $s;
+      $this->estacaoDeTrabalho  = $e;
+    }
+
     function mostrarDados()
     {
       parent::mostrarDados();
